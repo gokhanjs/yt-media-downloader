@@ -1,20 +1,6 @@
 from pytube import YouTube
 import time
 
-def getVideoInfo():
-    print('Its Working!')
-
-def downloadVideo():
-    print('Its Working 2!')
-
-
-'''#url = input("Enter Video Url: ")
-url = "https://www.youtube.com/watch?v=2zNSgSzhBfM"
-yt = YouTube(url)
-print(yt.title+" adlı video indiriliyor...")
-print('*********')
-yt.streams.get_highest_resolution().download()
-#print(yt.streams.filter(progressive=True))'''
 
 val = input('Video indirmek için "1", Müzik indirmek için "2":')
 choice = ''
