@@ -1,7 +1,32 @@
 from pytube import YouTube
+from flask import Flask,render_template
 import time
 
 
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/music")
+def music():
+    return render_template('music.html')
+
+@app.route("/video")
+def video():
+    return render_template('video.html')
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template('404.html'),404
+
+
+if __name__ == "__main__":
+    app.run()
+
+
+'''
 val = input('Video indirmek için "1", Müzik indirmek için "2":')
 choice = ''
 if val == "1":
@@ -29,7 +54,9 @@ elif choice == 'M':
 else:
     print('Bişey Oldu!')
 
-print('İşlem Tamam!')
+print('İşlem Tamam!')'''
+
+
 
 
 
