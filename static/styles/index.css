@@ -48,29 +48,46 @@ html {
   justify-content: center;
   align-items: center;
 }
-.btn-1 {
-  padding: 1.2rem 6rem;
+.urlInput {
+  max-width: 360px;
+  width: 100%;
   border: none;
-  background-color: tomato;
-  border-radius: 14px;
-  margin-bottom: 16px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  padding-left: 1rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  outline: none;
+  position: relative;
 }
-.btn-1 a {
+.urlInput::placeholder {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(175, 175, 175);
+}
+.urlForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.urlSendBtn {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(121, 144, 248);
   color: #e5e5e5;
-  font-weight: bold;
-  font-size: 24px;
-  text-decoration: none;
-}
-.btn-2 {
-  padding: 1.2rem 6rem;
+  font-weight: 600;
+  font-size: 12px;
   border: none;
-  background-color: tomato;
-  border-radius: 14px;
-  margin-top: 16px;
+  padding: 12px 18px;
+  margin-top: 0.4rem;
+  width: 360px;
 }
-.btn-2 a {
-  color: #e5e5e5;
-  font-weight: bold;
-  font-size: 24px;
-  text-decoration: none;
+.typeSection {
+  width: 360px;
+  padding-left: 1rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 0.4rem;
+  border: none;
+  outline: none;
 }
