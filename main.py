@@ -24,7 +24,7 @@ def download():
                 download_path = yt.streams.get_highest_resolution().download()
                 fname = download_path.split('//')[-1]
                 return send_file(fname, as_attachment=True)
-            #return render_template('download.html',url = yt.streams.get_highest_resolution().url)
+                #return render_template('download.html',url = yt.streams.get_highest_resolution().url)
             else:
                 return render_template('404.html'),404
         except:
