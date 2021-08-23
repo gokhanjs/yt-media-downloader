@@ -10,6 +10,7 @@ pip install pytube
 node app
 ```
 > Pytube kütüphanesinde hata alırsanız bu komutu kullanmayı deneyin.
+
 `pip install git+https://github.com/pytube/pytube`
 
 ### Kullanımı
